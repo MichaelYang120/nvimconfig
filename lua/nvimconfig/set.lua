@@ -33,3 +33,10 @@ vim.opt.colorcolumn = "80"
 -- remap control + f to control + F
 -- this was a bug, control + f was not working, where as control + F was working, so remapped it to control + f
 vim.api.nvim_set_keymap('n', '<C-f>', '<C-F>', { noremap = true, silent = true })
+
+-- remove dimming of inactive windows
+vim.opt.winhighlight = "Normal:ActiveWindow,NormalNC:InactiveWindow"
+
+-- testing out the following settings
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
